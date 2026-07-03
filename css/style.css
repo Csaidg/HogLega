@@ -1,0 +1,141 @@
+:root {
+  --bg: #0b0f14;
+  --panel: rgba(15, 20, 28, 0.9);
+  --gold: #d4af37;
+  --text: #eef2f7;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, #111820 0%, var(--bg) 100%);
+  color: var(--text);
+}
+.title-font { font-family: "Cinzel", serif; letter-spacing: .04em; }
+.site-nav {
+  background: rgba(7, 10, 14, .92);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.site-nav .container { gap: 1rem; display: flex; align-items: center; flex-wrap: wrap; }
+.brand-crest { width: 1.2rem; height: 1.2rem; object-fit: contain; display: inline-block; vertical-align: middle; }
+.hero { background: linear-gradient(rgba(8,12,18,.72), rgba(8,12,18,.72)), url("../images/Hogwarts.jpg") center/cover no-repeat; }
+.hero { position: relative; }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(212,175,55,.12), transparent 30%);
+  pointer-events: none;
+}
+.hero .container { position: relative; z-index: 1; }
+.hero h1 { text-shadow: 0 8px 20px rgba(0,0,0,.45); }
+.hero-kicker { margin-bottom: .75rem; }
+.hero-note { color: rgba(238,242,247,.82); max-width: 34rem; }
+.house-reminder { border: 1px solid rgba(241,217,139,.22); }
+.hero-house-icon { margin-right: .25rem; }
+.house-reminder--active { border-width: 1px; }
+.house-reminder.gryffindor { background: rgba(127,9,9,.18); }
+.house-reminder.slytherin { background: rgba(42,98,61,.18); }
+.house-reminder.ravenclaw { background: rgba(14,26,58,.18); }
+.house-reminder.hufflepuff { background: rgba(236,185,57,.18); color: #111; }
+.house-reminder.hufflepuff .text-muted-custom { color: rgba(17,17,17,.75) !important; }
+.panel {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+.hero-frame { border: 1px solid rgba(212,175,55,.22); }
+.btn-gold {
+  background: var(--gold);
+  color: #111;
+  font-weight: 700;
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-gold:hover, .btn-gold:focus { background: #f1d98b; color: #111; transform: translateY(-2px); box-shadow: 0 12px 22px rgba(0,0,0,.24); }
+.site-nav .nav-link { opacity: .9; }
+.site-nav .nav-link:hover { opacity: 1; }
+.text-muted-custom { color: rgba(238,242,247,.78); }
+.collapse { scroll-margin-top: 90px; }
+.magic-list { list-style: none; padding: 0; margin: 0; }
+.magic-list li {
+  padding: .55rem 0 .55rem 1.1rem;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+  position: relative;
+}
+.magic-list li:last-child { border-bottom: 0; }
+.magic-list li::before {
+  content: ""; position: absolute; left: 0; top: 1rem;
+  width: .4rem; height: .4rem; border-radius: 50%; background: var(--gold);
+}
+.game-map {
+  position: relative;
+  min-height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(rgba(8,12,18,.58), rgba(8,12,18,.58)), url("../images/ChatGPT Image 2 jul 2026, 14_47_13.png") center/cover no-repeat;
+}
+.map-marker {
+  position: absolute;
+  padding: .45rem .75rem;
+  border: 1px solid rgba(241,217,139,.35);
+  border-radius: 999px;
+  background: rgba(10,13,18,.9);
+  color: #fff;
+  cursor: pointer;
+}
+.marker-hogwarts { left: 18%; top: 18%; }
+.marker-hogsmeade { left: 54%; top: 38%; }
+.marker-forest { left: 33%; top: 68%; }
+.hl-popover { 
+  --bs-popover-bg: #f4e7c1;
+  --bs-popover-border-color: rgba(120, 86, 29, .65);
+  --bs-popover-header-bg: #7a5a2b;
+  --bs-popover-header-color: #fff6dd;
+  --bs-popover-body-color: #2a2216;
+}
+.hl-popover .popover { border-radius: .8rem; overflow: hidden; }
+.hl-popover .popover-header { font-family: "Cinzel", serif; }
+.house-hero { background: linear-gradient(135deg, rgba(127,9,9,.12), rgba(10,13,18,.05)); }
+.house-choice { background: linear-gradient(135deg, rgba(13,18,28,.95), rgba(8,12,18,.95)); }
+.house-pill {
+  display: inline-block;
+  padding: .35rem .7rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  font-size: .85rem;
+}
+.house-current { min-height: 130px; }
+.house-select {
+  width: 100%;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+  transition: transform .2s ease, box-shadow .2s ease, outline-color .2s ease;
+}
+.house-select:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(0,0,0,.24); }
+.house-select.is-selected { outline: 3px solid rgba(241,217,139,.8); outline-offset: 3px; }
+.house-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 12px 30px rgba(0,0,0,.2);
+}
+.gryffindor { background: linear-gradient(135deg, #7f0909, #d3a625); color: #fff; }
+.slytherin { background: linear-gradient(135deg, #0d1b10, #2a623d); color: #fff; }
+.ravenclaw { background: linear-gradient(135deg, #0e1a3a, #946b2d); color: #fff; }
+.hufflepuff { background: linear-gradient(135deg, #372e29, #ecb939); color: #111; }
+.house-card p { line-height: 1.6; }
+.house-points li::before { box-shadow: 0 0 10px rgba(241, 217, 139, .2); }
+.house-notes { background: linear-gradient(135deg, rgba(15,20,28,.94), rgba(10,13,18,.94)); }
+iframe { border: 0; }
+@media (max-width: 576px) {
+  .site-nav .container { gap: .5rem; }
+}

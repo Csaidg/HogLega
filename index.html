@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Hogwarts Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold title-font d-flex align-items-center gap-2" href="#inicio"><img src="images/Hogwarts-Crest.png" alt="Hogwarts Crest" class="brand-crest">Hogwarts Legacy</a>
+    </div>
+  </nav>
+
+  <main id="inicio">
+    <section class="hero text-white">
+      <div class="container py-5">
+        <div class="row align-items-center g-4 py-4">
+          <div class="col-lg-6">
+            <h1 class="display-4 title-font fw-bold">Hogwarts Legacy</h1>
+            <p class="lead">Explora Hogwarts, descubre hechizos antiguos y recorre un mundo lleno de misterio, criaturas magicas y rincones que parecen sacados de una leyenda.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-gold" href="#hechizos" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="hechizos">Hechizos</a>
+              <a class="btn btn-gold" href="#mapa" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="mapa">Exploracion</a>
+              <a class="btn btn-gold" href="#criaturas" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="criaturas">Criaturas</a>
+              <a class="btn btn-gold" href="pages/casas.html">Casas</a>
+            </div>
+            <p class="hero-note mb-0 mt-3">Una base compacta, pero con el ambiente oscuro y magico del juego.</p>
+            <div class="house-reminder mt-3 d-inline-block panel p-3">
+              <span class="small text-muted-custom d-block mb-1">Tu casa elegida</span>
+              <strong id="heroHouseName"><span id="heroHouseIcon" class="hero-house-icon"></span>Aun no has elegido una casa</strong>
+              <span id="heroHouseText" class="d-block small mt-1 text-muted-custom">Escoge una casa en la pagina de Casas.</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9 panel overflow-hidden hero-frame">
+              <iframe src="https://www.youtube.com/embed/BtyBjOW8sGY?autoplay=1&mute=1&rel=0&playsinline=1" title="Trailer de Hogwarts Legacy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 collapse" id="hechizos">
+      <div class="panel p-4">
+        <h2 class="title-font h3">Hechizos del juego</h2>
+        <p class="text-muted-custom">Cada hechizo tiene una funcion breve para que la lista se vea ordenada y facil de leer.</p>
+        <div class="row g-3">
+          <div class="col-md-4"><ul class="magic-list"><li title="Revela secretos y objetos ocultos">Revelio</li><li title="Ilumina zonas oscuras">Lumos</li><li title="Trae objetos hacia ti">Accio</li><li title="Levanta objetos en el aire">Wingardium Leviosa</li></ul></div>
+          <div class="col-md-4"><ul class="magic-list"><li title="Abre cerraduras">Alohomora</li><li title="Te vuelve invisible">Disillusionment Charm</li><li title="Repara objetos rotos">Reparo</li><li title="Empuja enemigos">Depulso</li></ul></div>
+          <div class="col-md-4"><ul class="magic-list"><li title="Aturde o inmoviliza">Stupefy</li><li title="Bloquea ataques">Protego</li><li title="Explota con fuego">Bombarda</li><li title="Libera magia ancestral">Ancient Magic</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 collapse" id="criaturas">
+      <div class="panel p-4">
+        <h2 class="title-font h3">Criaturas magicas</h2>
+        <div class="row g-3">
+          <div class="col-md-4"><ul class="magic-list"><li>Niffler</li><li>Mooncalf</li><li>Puffskein</li><li>Kneazle</li><li>Jobberknoll</li></ul></div>
+          <div class="col-md-4"><ul class="magic-list"><li>Thestral</li><li>Hippogriff</li><li>Unicorn</li><li>Phoenix</li><li>Graphorn</li></ul></div>
+          <div class="col-md-4"><ul class="magic-list"><li>Acromantula</li><li>Dugbog</li><li>Troll</li><li>Inferi</li><li>Spiders</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 collapse" id="mapa">
+      <div class="panel p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-4">
+            <h2 class="title-font h3">Mapa del juego</h2>
+            <p class="text-muted-custom">Pulsa un marcador para ver una breve descripcion del lugar.</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="game-map">
+              <button class="map-marker marker-hogwarts" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" data-bs-title="Hogwarts" data-bs-content="El castillo donde comienza toda la aventura.">Hogwarts</button>
+              <button class="map-marker marker-hogsmeade" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" data-bs-title="Hogsmeade" data-bs-content="El pueblo magico lleno de tiendas y secretos.">Hogsmeade</button>
+              <button class="map-marker marker-forest" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" data-bs-title="Bosque Prohibido" data-bs-content="Un lugar oscuro con criaturas y peligro.">Bosque</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach((el) => new bootstrap.Popover(el, { container: 'body' }));
+    ['hechizos', 'criaturas', 'mapa'].forEach((id) => {
+      const el = document.getElementById(id);
+      el.addEventListener('shown.bs.collapse', () => el.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    });
+
+    const heroHouseName = document.getElementById('heroHouseName');
+    const heroHouseIcon = document.getElementById('heroHouseIcon');
+    const heroHouseText = document.getElementById('heroHouseText');
+    const houseReminder = document.querySelector('.house-reminder');
+    const storedHouse = localStorage.getItem('hogwarts-house');
+    const houseInfo = {
+      Gryffindor: { text: 'Coraje, audacia y un impulso constante por la aventura.', theme: 'gryffindor' },
+      Slytherin: { text: 'Ambicion, astucia y una mente estrategica.', theme: 'slytherin' },
+      Ravenclaw: { text: 'Sabiduria, creatividad y curiosidad por encima de todo.', theme: 'ravenclaw' },
+      Hufflepuff: { text: 'Lealtad, paciencia y esfuerzo en cada paso.', theme: 'hufflepuff' }
+    };
+    const houseIcons = { Gryffindor: '🦁', Slytherin: '🐍', Ravenclaw: '🦅', Hufflepuff: '🦡' };
+    if (heroHouseName && storedHouse && houseInfo[storedHouse]) {
+      heroHouseName.textContent = `${houseIcons[storedHouse]} ${storedHouse}`;
+      heroHouseIcon.textContent = '';
+      heroHouseText.textContent = houseInfo[storedHouse].text;
+      houseReminder.classList.add(houseInfo[storedHouse].theme, 'house-reminder--active');
+    }
+    window.addEventListener('storage', (event) => {
+      if (event.key === 'hogwarts-house' && heroHouseName) {
+        const info = houseInfo[event.newValue];
+        heroHouseName.textContent = info ? `${houseIcons[event.newValue]} ${event.newValue}` : 'Aun no has elegido una casa';
+        heroHouseIcon.textContent = '';
+        heroHouseText.textContent = info ? info.text : 'Escoge una casa en la pagina de Casas.';
+        houseReminder.className = 'house-reminder mt-3 d-inline-block panel p-3';
+        if (info) houseReminder.classList.add(info.theme, 'house-reminder--active');
+      }
+    });
+  </script>
+</body>
+</html>

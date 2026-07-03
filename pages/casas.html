@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Casas | Hogwarts Legacy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold title-font" href="../index.html">Hogwarts Legacy</a>
+    </div>
+  </nav>
+
+  <main class="container py-5" id="casas">
+    <section class="panel p-4 mb-4 house-hero">
+      <span class="section-label hero-kicker">Hogwarts</span>
+      <h1 class="mb-3">Casas de Hogwarts</h1>
+      <p class="text-muted-custom mb-0">Cada casa de Hogwarts tiene una historia, un color y una forma distinta de ver la magia. Esta pagina esta centrada solo en las casas, con sus valores, colores y una eleccion que puedes guardar.</p>
+    </section>
+
+    <section class="panel p-4 mb-5 house-choice">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="title-font h3">Y dime, que casa eres tu?</h2>
+          <p class="text-muted-custom mb-0">Elige una casa y quedara guardada en tu navegador hasta que la cambies. Asi siempre sabras cual es tu casa favorita.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="house-current panel p-3">
+            <span class="small text-muted-custom d-block mb-1">Tu casa actual</span>
+            <h3 class="title-font h4 mb-1" id="selectedHouseTitle">Aun no has elegido una casa</h3>
+            <p class="mb-0" id="selectedHouseText">Escoge una opcion abajo para guardar tu casa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 mt-4">
+        <div class="col-md-6 col-xl-3"><button type="button" class="house-select gryffindor" data-house="Gryffindor" data-desc="Coraje, audacia y valentia.">Elegir Gryffindor</button></div>
+        <div class="col-md-6 col-xl-3"><button type="button" class="house-select slytherin" data-house="Slytherin" data-desc="Ambicion, astucia y determinacion.">Elegir Slytherin</button></div>
+        <div class="col-md-6 col-xl-3"><button type="button" class="house-select ravenclaw" data-house="Ravenclaw" data-desc="Sabiduria, creatividad y curiosidad.">Elegir Ravenclaw</button></div>
+        <div class="col-md-6 col-xl-3"><button type="button" class="house-select hufflepuff" data-house="Hufflepuff" data-desc="Lealtad, paciencia y esfuerzo.">Elegir Hufflepuff</button></div>
+      </div>
+    </section>
+
+    <section class="row g-4 mb-5">
+      <div class="col-md-6 col-xl-3">
+        <article class="house-card gryffindor h-100 p-4" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" tabindex="0" data-bs-title="Gryffindor" data-bs-content="Nacio para los valientes. Su historia siempre ha estado ligada al coraje, la proteccion de los demas y las decisiones que se toman cuando todo parece perdido.">
+          <span class="house-pill">Rojo y dorado</span>
+          <h2 class="h4 title-font mt-3">Gryffindor</h2>
+          <p>Representa la valentia, la audacia y el coraje. Sus miembros suelen actuar sin miedo cuando llega el peligro.</p>
+          <p class="mb-0 small">Ideal para quienes se lanzan a la aventura.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <article class="house-card slytherin h-100 p-4" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" tabindex="0" data-bs-title="Slytherin" data-bs-content="Forjada entre la ambicion y la inteligencia, Slytherin ha dado origen a magos estrategicos, misteriosos y decididos a dejar huella en la historia magica.">
+          <span class="house-pill">Verde y plata</span>
+          <h2 class="h4 title-font mt-3">Slytherin</h2>
+          <p>Se asocia con la ambicion, la astucia y la determinacion. Es una casa estrategica y muy competitiva.</p>
+          <p class="mb-0 small">Perfecta para quienes buscan llegar lejos.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <article class="house-card ravenclaw h-100 p-4" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" tabindex="0" data-bs-title="Ravenclaw" data-bs-content="Su historia esta marcada por la busqueda del conocimiento, la curiosidad y la idea de que la sabiduria puede abrir cualquier puerta.">
+          <span class="house-pill">Azul y bronce</span>
+          <h2 class="h4 title-font mt-3">Ravenclaw</h2>
+          <p>Premia la inteligencia, la creatividad y la curiosidad. Sus estudiantes disfrutan aprender y descubrir cosas nuevas.</p>
+          <p class="mb-0 small">Ideal para mentes inquietas.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-3">
+        <article class="house-card hufflepuff h-100 p-4" data-bs-toggle="popover" data-bs-custom-class="hl-popover" data-bs-trigger="focus" tabindex="0" data-bs-title="Hufflepuff" data-bs-content="Hufflepuff siempre ha sido la casa de quienes construyen con esfuerzo, bondad y lealtad. Su historia demuestra que la fuerza tambien puede ser tranquila y constante.">
+          <span class="house-pill">Amarillo y negro</span>
+          <h2 class="h4 title-font mt-3">Hufflepuff</h2>
+          <p>Se caracteriza por la lealtad, el esfuerzo y la paciencia. Es una casa amable y muy unida.</p>
+          <p class="mb-0 small">Perfecta para quienes valoran la amistad.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel p-4 house-notes">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <h2 class="title-font h3">Que hace especial a cada casa</h2>
+          <p class="mb-0 text-muted-custom">Aunque todas pertenecen a Hogwarts, cada una transmite una forma distinta de vivir la magia. Por eso el sombrero seleccionador siempre intenta descubrir donde encaja mejor cada estudiante.</p>
+        </div>
+        <div class="col-lg-5">
+          <ul class="magic-list mb-0 house-points">
+            <li>Gryffindor premia el valor</li>
+            <li>Slytherin valora la ambicion</li>
+            <li>Ravenclaw admira el conocimiento</li>
+            <li>Hufflepuff respeta el esfuerzo</li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn btn-gold mt-4" href="../index.html">Volver al inicio</a>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach((el) => new bootstrap.Popover(el, { container: 'body' }));
+    const selectedHouseTitle = document.getElementById('selectedHouseTitle');
+    const selectedHouseText = document.getElementById('selectedHouseText');
+    const houseButtons = document.querySelectorAll('.house-select');
+    const storedHouse = localStorage.getItem('hogwarts-house');
+
+    const houseData = {
+      Gryffindor: 'Tu casa actual es Gryffindor: coraje, energia y un corazon valiente.',
+      Slytherin: 'Tu casa actual es Slytherin: ambicion, astucia y mucha determinacion.',
+      Ravenclaw: 'Tu casa actual es Ravenclaw: inteligencia, creatividad y curiosidad.',
+      Hufflepuff: 'Tu casa actual es Hufflepuff: lealtad, paciencia y esfuerzo.'
+    };
+
+    function setHouse(name) {
+      localStorage.setItem('hogwarts-house', name);
+      selectedHouseTitle.textContent = name;
+      selectedHouseText.textContent = houseData[name];
+      houseButtons.forEach((btn) => btn.classList.toggle('is-selected', btn.dataset.house === name));
+    }
+
+    houseButtons.forEach((btn) => btn.addEventListener('click', () => setHouse(btn.dataset.house)));
+    if (storedHouse && houseData[storedHouse]) setHouse(storedHouse);
+  </script>
+</body>
+</html>
