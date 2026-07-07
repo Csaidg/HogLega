@@ -1,19 +1,20 @@
-# HogLega
+# Hogwarts Legacy
 
 Sitio web tematico inspirado en *Hogwarts Legacy*, hecho con HTML, CSS y JavaScript.
 
 ## Descripcion
 
-Este proyecto presenta una pequena experiencia web sobre Hogwarts, sus hechizos, criaturas, mapa y casas. Incluye una pagina principal y una pagina dedicada a las casas de Hogwarts, con seleccion guardada en el navegador.
+La pagina presenta una experiencia visual sobre Hogwarts, las casas, las noticias del mundo magico, enlaces de interes y el formulario de contacto. La navegacion esta pensada como una cronica del castillo, con estilo oscuro, detalles dorados y componentes interactivos.
 
 ## Caracteristicas
 
-- Hero principal con trailer incrustado.
-- Secciones de hechizos, criaturas y mapa interactivo.
-- Popovers informativos en lugares y casas.
-- Seleccion de casa guardada con `localStorage`.
+- Portada con hero, carrusel y secciones editoriales.
+- Pagina de casas con seleccion guardada en el navegador.
+- Seccion de noticias con layout propio.
+- Pagina de enlaces con YouTube y Google Maps.
+- Pagina de contacto con mapa, correo y redes.
+- Botones flotantes para tema, privacidad y aviso del castillo.
 - Diseno responsivo con Bootstrap 5.
-- Tipografia y estilo visual inspirados en el mundo magico.
 
 ## Tecnologias
 
@@ -21,6 +22,7 @@ Este proyecto presenta una pequena experiencia web sobre Hogwarts, sus hechizos,
 - CSS3
 - JavaScript
 - Bootstrap 5
+- Bootstrap Icons
 - Google Fonts
 
 ## Estructura
@@ -28,7 +30,11 @@ Este proyecto presenta una pequena experiencia web sobre Hogwarts, sus hechizos,
 ```text
 index.html
 pages/casas.html
+pages/noticias.html
+pages/enlaces.html
+pages/contacto.html
 css/style.css
+js/main.js
 images/
 ```
 
@@ -36,8 +42,8 @@ images/
 
 1. Clona el repositorio.
 2. Abre `index.html` en tu navegador.
-3. Navega a la pagina de casas para elegir tu casa favorita.
+3. Explora las secciones del sitio desde la navegacion principal.
 
 ## Nota
 
-Este proyecto es una practica front-end y no requiere instalacion de dependencias ni servidor.
+Es una practica front-end y no requiere dependencias ni servidor para funcionar.
