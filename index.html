@@ -230,13 +230,31 @@
     </section>
   </main>
 
-  <button class="btn btn-privacy privacy-fab" type="button" data-bs-toggle="modal" data-bs-target="#privacyModal">
-    <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
-  </button>
-
-  <button class="btn btn-privacy castle-alert-fab" type="button" id="castleAlertBtn" aria-label="Aviso del castillo">
-    <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
-  </button>
+  <footer class="site-footer container pb-5">
+    <div class="panel p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="title-font h4 mb-2">Hogwarts Legacy</h2>
+          <p class="mb-0 text-muted-custom">Proyecto academico sobre Hogwarts, sus casas y la magia antigua.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-gold" href="#inicio">Inicio</a>
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end mt-3">
+            <button class="btn btn-privacy" type="button" data-bs-toggle="modal" data-bs-target="#privacyModal">
+              <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+              <span class="ms-1">Privacidad</span>
+            </button>
+            <button class="btn btn-privacy" type="button" id="castleAlertBtn" aria-label="Aviso del castillo">
+              <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
+              <span class="ms-1">Aviso</span>
+            </button>
+          </div>
+          <p class="mb-1 text-muted-custom">Evaluacion parcial</p>
+          <small class="text-muted-custom">&copy; 2026 Hogwarts Legacy</small>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">

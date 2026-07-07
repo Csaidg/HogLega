@@ -144,6 +144,55 @@
     </section>
   </main>
 
+  <footer class="site-footer container pb-5">
+    <div class="panel p-4 p-lg-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="title-font h4 mb-2">Hogwarts Legacy</h2>
+          <p class="mb-0 text-muted-custom">Proyecto academico sobre Hogwarts, sus casas y la magia antigua.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-gold" href="../index.html">Inicio</a>
+          <div class="d-flex flex-wrap gap-2 justify-content-lg-end mt-3">
+            <button class="btn btn-privacy" type="button" data-bs-toggle="modal" data-bs-target="#privacyModal">
+              <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+              <span class="ms-1">Privacidad</span>
+            </button>
+            <button class="btn btn-privacy" type="button" id="castleAlertBtn" aria-label="Aviso del castillo">
+              <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
+              <span class="ms-1">Aviso</span>
+            </button>
+          </div>
+          <p class="mb-1 text-muted-custom">Evaluacion parcial</p>
+          <small class="text-muted-custom">&copy; 2026 Hogwarts Legacy</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content panel">
+        <div class="modal-header border-0">
+          <h2 class="modal-title title-font h4" id="privacyModalLabel">Politica de Privacidad</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <p class="text-muted-custom">Este grimorio digital recuerda tu casa elegida y usa enlaces externos para abrir mapas, videos y referencias del mundo magico.</p>
+          <ul class="contact-list text-muted-custom mb-0">
+            <li>Se guarda la casa seleccionada en localStorage para recordar tu preferencia.</li>
+            <li>No se recopilan datos personales sensibles desde el formulario de contacto.</li>
+            <li>Los enlaces externos pueden abrir servicios de terceros como YouTube o Google Maps.</li>
+            <li>La exploracion del castillo se apoya en referencias, mapas y videos del mundo de Hogwarts Legacy.</li>
+          </ul>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-gold" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/main.js"></script>
 </body>

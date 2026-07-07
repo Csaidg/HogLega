@@ -225,34 +225,6 @@ body {
   border-color: rgba(212,175,55,.45);
   background: rgba(212,175,55,.08);
 }
-.privacy-fab {
-  position: fixed;
-  right: 1rem;
-  top: 8.1rem;
-  z-index: 1049;
-  backdrop-filter: blur(8px);
-  width: 2.9rem;
-  height: 2.9rem;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.privacy-fab i { font-size: 1rem; }
-.castle-alert-fab {
-  position: fixed;
-  right: 1rem;
-  top: 11.4rem;
-  z-index: 1049;
-  backdrop-filter: blur(8px);
-  width: 2.9rem;
-  height: 2.9rem;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.castle-alert-fab i { font-size: 1rem; }
 .site-nav .nav-link { opacity: .9; }
 .site-nav .nav-link:hover { opacity: 1; }
 .text-muted-custom { color: var(--text-muted); }
@@ -413,6 +385,14 @@ body {
 .contact-link:hover, .contact-link:focus { transform: translateY(-2px); background: #f1d98b; color: #111; }
 .contact-list { padding-left: 1.2rem; }
 .contact-list li { margin-bottom: .6rem; }
+.site-footer { margin-top: 1rem; }
+.site-footer .btn-privacy {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: .55rem .9rem;
+  backdrop-filter: none;
+}
 
 body[data-theme="light"] .hero {
   background: linear-gradient(rgba(248,250,253,.9), rgba(248,250,253,.84)), url("../images/Hogwarts.jpg") center/cover no-repeat;
@@ -699,8 +679,6 @@ body[data-theme="light"] .interest-card {
 @media (max-width: 576px) {
   .site-nav .container { gap: .5rem; }
   .theme-fab { top: 3.5rem; right: .75rem; width: 2.75rem; height: 2.75rem; }
-  .privacy-fab { top: 7.2rem; right: .75rem; width: 2.6rem; height: 2.6rem; }
-  .castle-alert-fab { top: 10.2rem; right: .75rem; width: 2.6rem; height: 2.6rem; }
 }
 
 @media (max-width: 991px) {
